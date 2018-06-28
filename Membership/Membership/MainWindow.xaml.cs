@@ -21,9 +21,17 @@ namespace Membership
     public partial class MainWindow : Window
     {
         MemberShipEntities db = new MemberShipEntities();
+        public static DataGrid dataGrid;
+
         public MainWindow()
         {
             InitializeComponent();
+            Load();
+        }
+        public void Load()
+        {
+            MeuDataGrid.ItemsSource = db.Membros.ToList();
+            dataGrid = MeuDataGrid;
         }
     }
 }
