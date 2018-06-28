@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Membership"
         mc:Ignorable="d"
-        Title="Atualizar" Height="550" Width="350">
+        Title="Atualizar" Height="550" Width="355">
     <Grid>
-        
+    <TextBlock HorizontalAlignment="Left" Margin="57,111,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" RenderTransformOrigin="-3.519,1.102"/>
+    <TextBlock HorizontalAlignment="Left" Margin="165,44,0,0" TextWrapping="Wrap" Text="Membro" VerticalAlignment="Top"/>
+    <TextBox Name="nomeTextBox" HorizontalAlignment="Left" Height="23" Margin="142,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+    <TextBlock HorizontalAlignment="Left" Margin="57,180,0,0" TextWrapping="Wrap" Text="Gênero" VerticalAlignment="Top"/>
+    <ComboBox Name="generoComboBox" HorizontalAlignment="Left" Margin="142,180,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox.Items>
+            <ComboBoxItem>
+                Masculino
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Feminino
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Outros
+            </ComboBoxItem>
+        </ComboBox.Items>
+    </ComboBox>
+    <Button Name="AtualizarBtn" Content="Atualizar" HorizontalAlignment="Left" Margin="87,445,0,0" VerticalAlignment="Top" Width="175"/>
+
     </Grid>
 </Window>
