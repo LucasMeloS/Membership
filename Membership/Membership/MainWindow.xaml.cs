@@ -20,6 +20,7 @@ namespace Membership
     /// </summary>
     public partial class MainWindow : Window
     {
+        MemberShipEntities db = new MemberShipEntities();
         public MainWindow()
         {
             InitializeComponent();
