@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Membership"
         mc:Ignorable="d"
-        Title="Inserir_membro" Height="550" Width="355">
+        Title="Inserir" Height="550" Width="355">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="57,111,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" RenderTransformOrigin="-3.519,1.102"/>
         <TextBlock HorizontalAlignment="Left" Margin="165,44,0,0" TextWrapping="Wrap" Text="Membro" VerticalAlignment="Top"/>

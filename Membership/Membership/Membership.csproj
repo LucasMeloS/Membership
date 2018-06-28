@@ -54,11 +54,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Inserir membro.xaml">
+    <Page Include="Atualizar_membro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Inserir_membro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Membership.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -66,11 +70,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Inserir membro.xaml.cs">
-      <DependentUpon>Inserir membro.xaml</DependentUpon>
+    <Compile Include="Atualizar_membro.xaml.cs">
+      <DependentUpon>Atualizar_membro.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Inserir_membro.xaml.cs">
+      <DependentUpon>Inserir_membro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Membership.xaml.cs">
+      <DependentUpon>Membership.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
