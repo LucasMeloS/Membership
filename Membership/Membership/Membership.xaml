@@ -5,9 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Membership"
         mc:Ignorable="d"
-        Title="MEMBERSHIP" Height="700" Width="400">
+        Title="MEMBERSHIP" Height="550" Width="355">
 
-    <Grid
-      x:Name="MeuDataGrid" x:FieldModifier="public" 
-    />
+    <DataGrid x:Name="MeuDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" ColumnWidth="*">
+        <DataGrid.Columns>
+            <DataGridTextColumn Header="Id" Binding="{Binding id}"></DataGridTextColumn>
+            <DataGridTextColumn Header="Nome" Binding="{Binding nome}"></DataGridTextColumn>
+            <DataGridTextColumn Header="genero" Binding="{Binding genero}"></DataGridTextColumn>
+            <DataGridTextColumn Header="Id" Binding="{Binding id}"></DataGridTextColumn>
+            <DataGridTemplateColumn>
+                <DataGridTemplateColumn.HeaderTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="Action"></TextBlock>
+                    </DataTemplate>
+                </DataGridTemplateColumn.HeaderTemplate>
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
+        </DataGrid.Columns>
+    </DataGrid>
+    
 </Window>
