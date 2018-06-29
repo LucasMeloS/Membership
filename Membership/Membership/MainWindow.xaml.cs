@@ -21,6 +21,7 @@ namespace Membership
     public partial class MainWindow : Window
     {
         MemberShipEntities db = new MemberShipEntities();
+        Inserir_membro Imembro = new Inserir_membro();
         public static DataGrid dataGrid;
 
         public MainWindow()
@@ -32,6 +33,12 @@ namespace Membership
         {
             MeuDataGrid.ItemsSource = db.Membros.ToList();
             dataGrid = MeuDataGrid;
+        }
+
+        private void AdicionarBtn_Click(object sender, RoutedEventArgs e)
+        {
+            
+            Imembro.ShowDialog();
         }
     }
 }

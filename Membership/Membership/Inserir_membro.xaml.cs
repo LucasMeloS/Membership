@@ -19,9 +19,31 @@ namespace Membership
     /// </summary>
     public partial class Inserir_membro : Window
     {
+        MemberShipEntities db = new MemberShipEntities();
+        Membros membros = new Membros();
+        public Membros membro; 
+
         public Inserir_membro()
         {
             InitializeComponent();
+        }
+
+        private void AdicionarBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+            
+                 membro.nome = nomeTextBox.Text;
+                 membro.genero = generoComboBox.Text;
+            
+        
+
+            db.Membros.Add(membros);
+            db.SaveChanges();
+            MainWindow.dataGrid.ItemsSource = db.Membros.ToList();
+            this.Hide();
+
+              
+
         }
     }
 }

@@ -24,7 +24,7 @@
                 </ComboBoxItem>
             </ComboBox.Items>
         </ComboBox>
-        <Button Name="AdicionarBtn" Content="Adicionar" HorizontalAlignment="Left" Margin="87,445,0,0" VerticalAlignment="Top" Width="175"/>
+        <Button Name="AdicionarBtn" Content="Adicionar" HorizontalAlignment="Left" Margin="87,445,0,0" VerticalAlignment="Top" Width="175" Click="AdicionarBtn_Click"/>
 
     </Grid>
 </Window>

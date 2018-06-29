@@ -12,7 +12,6 @@
             <DataGridTextColumn Header="Id" Binding="{Binding id}"></DataGridTextColumn>
             <DataGridTextColumn Header="Nome" Binding="{Binding nome}"></DataGridTextColumn>
             <DataGridTextColumn Header="genero" Binding="{Binding genero}"></DataGridTextColumn>
-            <DataGridTextColumn Header="Id" Binding="{Binding id}"></DataGridTextColumn>
             <DataGridTemplateColumn>
                 <DataGridTemplateColumn.HeaderTemplate>
                     <DataTemplate>
@@ -22,7 +21,7 @@
                 <DataGridTemplateColumn.CellTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <Button x:Name="AdicionarBtn" Content="Adicionar"></Button>
+                            <Button x:Name="AdicionarBtn" Content="Adicionar" Click="AdicionarBtn_Click" ></Button>
                             <Button x:Name="AtualizarBtn" Content="Atualizar"></Button>
                             <Button x:Name="ExcluirBtn" Content="Excluir"></Button>
                         </StackPanel>
