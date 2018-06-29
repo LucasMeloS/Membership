@@ -22,6 +22,7 @@ namespace Membership
     {
         MemberShipEntities db = new MemberShipEntities();
         Inserir_membro Imembro = new Inserir_membro();
+        Atualizar_membro Amembro = new Atualizar_membro();
         public static DataGrid dataGrid;
 
         public MainWindow()
@@ -39,6 +40,12 @@ namespace Membership
         {
             
             Imembro.ShowDialog();
+        }
+
+        private void AtualizarBtn_Click(object sender, RoutedEventArgs e)
+        {
+            int Id = (MeuDataGrid.SelectedItem as Membros).id;
+            Amembro.ShowDialog();
         }
     }
 }

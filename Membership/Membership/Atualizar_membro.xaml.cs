@@ -19,9 +19,20 @@ namespace Membership
     /// </summary>
     public partial class Atualizar_membro : Window
     {
-        public Atualizar_membro()
+        MemberShipEntities db = new MemberShipEntities();
+        int Id;
+        public Atualizar_membro(int membroId)
         {
             InitializeComponent();
+            Id = membroId;
+        }
+
+        private void AtualizarBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Membros AtualizaMembro = (from m in db.Membros
+                                      where m.id == Id
+                                      select m);
+
         }
     }
 }
