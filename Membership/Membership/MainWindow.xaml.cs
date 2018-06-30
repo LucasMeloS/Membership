@@ -46,5 +46,12 @@ namespace Membership
             Atualizar_membro Amembro = new Atualizar_membro(Id);
             Amembro.ShowDialog();
         }
+
+        private void ExcluirBtn_Click(object sender, RoutedEventArgs e)
+        {
+            int Id = (MeuDataGrid.SelectedItem as Membros).id;
+            var deletamembro = db.Membros.Where(m => m.id == Id).Single();
+            db.Membros.Remove(deletamembro);
+        }
     }
 }
