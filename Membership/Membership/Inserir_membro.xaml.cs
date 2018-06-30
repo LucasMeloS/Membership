@@ -21,7 +21,6 @@ namespace Membership
     {
         MemberShipEntities db = new MemberShipEntities();
         Membros membros = new Membros();
-        public Membros membro; 
 
         public Inserir_membro()
         {
@@ -32,8 +31,8 @@ namespace Membership
         {
 
             
-                 membro.nome = nomeTextBox.Text;
-                 membro.genero = generoComboBox.Text;
+                 membros.nome = nomeTextBox.Text;
+                 membros.genero = generoComboBox.Text;
             
         
 

@@ -31,7 +31,7 @@ namespace Membership
         {
             Membros AtualizaMembro = (from m in db.Membros
                                       where m.id == Id
-                                      select m);
+                                      select m).Single();
 
         }
     }
