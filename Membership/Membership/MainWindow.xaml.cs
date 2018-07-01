@@ -44,7 +44,7 @@ namespace Membership
         {
             int Id = (MeuDataGrid.SelectedItem as Membros).id;
             Atualizar_membro Amembro = new Atualizar_membro(Id);
-            Amembro.ShowDialog();
+            Amembro.ShowDialog(); 
         }
 
         private void ExcluirBtn_Click(object sender, RoutedEventArgs e)
@@ -52,6 +52,8 @@ namespace Membership
             int Id = (MeuDataGrid.SelectedItem as Membros).id;
             var deletamembro = db.Membros.Where(m => m.id == Id).Single();
             db.Membros.Remove(deletamembro);
+            db.SaveChanges();
+            MeuDataGrid.ItemsSource = db.Membros.ToList();
         }
     }
 }
