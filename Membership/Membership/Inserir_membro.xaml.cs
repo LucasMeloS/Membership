@@ -33,8 +33,8 @@ namespace Membership
             
                  membros.nome = nomeTextBox.Text;
                  membros.genero = generoComboBox.Text;
-                 membros.email = emailComboBox.Text;
-                 membros.idade = idadeComboBox.Text;
+                 //membros.email = emailComboBox.Text;
+                 //membros.idade = idadeComboBox.Text;
 
 
 
@@ -45,6 +45,21 @@ namespace Membership
             this.Hide();
 
               
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+       
+        }
+
+        private void nomeTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
 
         }
     }
