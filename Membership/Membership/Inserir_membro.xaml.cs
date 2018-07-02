@@ -33,8 +33,8 @@ namespace Membership
             
                  membros.nome = nomeTextBox.Text;
                  membros.genero = generoComboBox.Text;
-                 //membros.email = emailComboBox.Text;
-                 //membros.idade = idadeComboBox.Text;
+                 membros.email = emailTextBox.Text;
+                 membros.idade = Convert.ToByte(idadeTextBox.Text);
 
 
 

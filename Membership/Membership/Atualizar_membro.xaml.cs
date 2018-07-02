@@ -35,6 +35,8 @@ namespace Membership
 
             AtualizaMembro.nome = nomeTextBox.Text;
             AtualizaMembro.genero = generoComboBox.Text;
+            AtualizaMembro.email = emailTextBox.Text;
+            AtualizaMembro.idade = Convert.ToByte(idadeTextBox.Text);
             db.SaveChanges();
             MainWindow.dataGrid.ItemsSource = db.Membros.ToList();
 

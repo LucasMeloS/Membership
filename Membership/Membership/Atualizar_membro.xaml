@@ -10,8 +10,8 @@
     <TextBlock HorizontalAlignment="Left" Margin="57,111,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" RenderTransformOrigin="-3.519,1.102"/>
     <TextBlock HorizontalAlignment="Left" Margin="165,44,0,0" TextWrapping="Wrap" Text="Membro" VerticalAlignment="Top"/>
     <TextBox Name="nomeTextBox" HorizontalAlignment="Left" Height="23" Margin="142,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-    <TextBlock HorizontalAlignment="Left" Margin="57,180,0,0" TextWrapping="Wrap" Text="Gênero" VerticalAlignment="Top"/>
-    <ComboBox Name="generoComboBox" HorizontalAlignment="Left" Margin="142,180,0,0" VerticalAlignment="Top" Width="120">
+    <TextBlock HorizontalAlignment="Left" Margin="57,275,0,0" TextWrapping="Wrap" Text="Gênero" VerticalAlignment="Top"/>
+    <ComboBox Name="generoComboBox" HorizontalAlignment="Left" Margin="142,275,0,0" VerticalAlignment="Top" Width="120">
         <ComboBox.Items>
             <ComboBoxItem>
                 Masculino
@@ -25,6 +25,10 @@
         </ComboBox.Items>
     </ComboBox>
     <Button Name="AtualizarBtn" Content="Atualizar" HorizontalAlignment="Left" Margin="87,445,0,0" VerticalAlignment="Top" Width="175" Click="AtualizarBtn_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="57,165,0,0" TextWrapping="Wrap" Text="Idade" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="57,220,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top"/>
+        <TextBox Name="idadeTextBox" HorizontalAlignment="Left" Height="23" Margin="142,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="emailTextBox" HorizontalAlignment="Left" Height="23" Margin="142,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
