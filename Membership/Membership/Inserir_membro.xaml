@@ -12,7 +12,7 @@
             <ColumnDefinition Width="270*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock HorizontalAlignment="Left" Margin="63,118,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" RenderTransformOrigin="-3.519,1.102" Grid.ColumnSpan="2" Height="16" Width="33"/>
+        <TextBlock HorizontalAlignment="Left" Margin="57,118,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" RenderTransformOrigin="-3.519,1.102" Grid.ColumnSpan="2" Height="16" Width="33"/>
         <TextBlock HorizontalAlignment="Left" Margin="87,44,0,0" TextWrapping="Wrap" Text="Membro" VerticalAlignment="Top" Grid.Column="1" Height="16" Width="46"/>
         <TextBox Name="nomeTextBox" HorizontalAlignment="Left" Height="23" Margin="63,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" TextChanged="nomeTextBox_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="57,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="16" Width="49"><Run Text="Gêner"/><Run Text="o"/><LineBreak/><Run Text="ooooooooo"/><Run Text="oo"/><Run Text="oo"/><Run Text="ooooo"/><Run Text="o"/></TextBlock>
@@ -31,9 +31,9 @@
         </ComboBox>
         <Button Name="AdicionarBtn" Content="Adicionar" HorizontalAlignment="Left" Margin="9,445,0,0" VerticalAlignment="Top" Width="174" Click="AdicionarBtn_Click" Grid.Column="1" Height="20"/>
         <TextBox Name="idadeTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="63,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.117,0.174" TextChanged="TextBox_TextChanged"/>
-        <Label Content="Idade" HorizontalAlignment="Left" Margin="57,152,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="55" Height="26"/>
-        <Label Content="E-mail" HorizontalAlignment="Left" Margin="57,201,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="26" Width="43"/>
         <TextBox Name="emailTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="63,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="57,162,0,0" TextWrapping="Wrap" Text="Idade" VerticalAlignment="Top" Grid.ColumnSpan="2" RenderTransformOrigin="0.976,0.439"/>
+        <TextBlock HorizontalAlignment="Left" Margin="57,212,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
