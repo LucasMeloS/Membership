@@ -25,6 +25,6 @@ namespace Membership
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Membros> Membros { get; set; }
+        public virtual DbSet<Membro> Membros { get; set; }
     }
 }

@@ -29,7 +29,7 @@ namespace Membership
 
         private void AtualizarBtn_Click(object sender, RoutedEventArgs e)
         {
-            Membros AtualizaMembro = (from m in db.Membros
+            Membro AtualizaMembro = (from m in db.Membros
                                       where m.id == Id
                                       select m).Single();
 

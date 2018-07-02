@@ -20,7 +20,7 @@ namespace Membership
     public partial class Inserir_membro : Window
     {
         MemberShipEntities db = new MemberShipEntities();
-        Membros membros = new Membros();
+        Membro membros = new Membro();
 
         public Inserir_membro()
         {
@@ -33,8 +33,11 @@ namespace Membership
             
                  membros.nome = nomeTextBox.Text;
                  membros.genero = generoComboBox.Text;
-            
-        
+                 membros.email = emailComboBox.Text;
+                 membros.idade = idadeComboBox.Text;
+
+
+
 
             db.Membros.Add(membros);
             db.SaveChanges();

@@ -12,6 +12,8 @@
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nome" Type="varchar" MaxLength="50" />
           <Property Name="genero" Type="varchar" MaxLength="50" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="idade" Type="tinyint" />
         </EntityType>
         <EntityContainer Name="MemberShipModelStoreContainer">
           <EntitySet Name="Membros" EntityType="Self.Membros" Schema="dbo" store:Type="Tables" />
@@ -21,16 +23,18 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="MemberShipModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="Membros">
+        <EntityType Name="Membro">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="genero" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="idade" Type="Byte" />
         </EntityType>
         <EntityContainer Name="MemberShipEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Membros" EntityType="Self.Membros" />
+          <EntitySet Name="Membros" EntityType="Self.Membro" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -39,11 +43,13 @@
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="MemberShipModelStoreContainer" CdmEntityContainer="MemberShipEntities">
           <EntitySetMapping Name="Membros">
-            <EntityTypeMapping TypeName="MemberShipModel.Membros">
+            <EntityTypeMapping TypeName="MemberShipModel.Membro">
               <MappingFragment StoreEntitySet="Membros">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="nome" ColumnName="nome" />
                 <ScalarProperty Name="genero" ColumnName="genero" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="idade" ColumnName="idade" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -61,7 +67,7 @@
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />

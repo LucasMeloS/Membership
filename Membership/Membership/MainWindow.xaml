@@ -8,27 +8,31 @@
         Title="MEMBERSHIP" Height="550" Width="355">
 
     <DataGrid x:Name="MeuDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" ColumnWidth="*">
+
         <DataGrid.Columns>
-            <DataGridTextColumn Header="Id" Binding="{Binding id}"></DataGridTextColumn>
-            <DataGridTextColumn Header="Nome" Binding="{Binding nome}"></DataGridTextColumn>
-            <DataGridTextColumn Header="genero" Binding="{Binding genero}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Id" Binding="{Binding id}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Nome" Binding="{Binding nome}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Genero" Binding="{Binding genero}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Email" Binding="{Binding email}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Idade" Binding="{Binding idade}"></DataGridTextColumn>
             <DataGridTemplateColumn>
-                <DataGridTemplateColumn.HeaderTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="Action"></TextBlock>
-                    </DataTemplate>
-                </DataGridTemplateColumn.HeaderTemplate>
-                <DataGridTemplateColumn.CellTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <Button x:Name="AdicionarBtn" Content="Adicionar" Click="AdicionarBtn_Click" ></Button>
-                            <Button x:Name="AtualizarBtn" Content="Atualizar" Click="AtualizarBtn_Click"></Button>
-                            <Button x:Name="ExcluirBtn" Content="Excluir" Click="ExcluirBtn_Click"></Button>
-                        </StackPanel>
-                    </DataTemplate>
-                </DataGridTemplateColumn.CellTemplate>
-            </DataGridTemplateColumn>
-        </DataGrid.Columns>
-    </DataGrid>
-    
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="Ação"></TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical">
+                                <Button x:Name="AdicionarBtn" Content="Adicionar" Click="AdicionarBtn_Click" ></Button>
+                                <Button x:Name="AtualizarBtn" Content="Atualizar" Click="AtualizarBtn_Click"></Button>
+                                <Button x:Name="ExcluirBtn" Content="Excluir" Click="ExcluirBtn_Click"></Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+
 </Window>

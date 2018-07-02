@@ -7,12 +7,16 @@
         mc:Ignorable="d"
         Title="Inserir" Height="550" Width="355">
     <Grid>
-        
-        <TextBlock HorizontalAlignment="Left" Margin="57,111,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" RenderTransformOrigin="-3.519,1.102"/>
-        <TextBlock HorizontalAlignment="Left" Margin="165,44,0,0" TextWrapping="Wrap" Text="Membro" VerticalAlignment="Top"/>
-        <TextBox Name="nomeTextBox" HorizontalAlignment="Left" Height="23" Margin="142,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="57,180,0,0" TextWrapping="Wrap" Text="Gênero" VerticalAlignment="Top"/>
-        <ComboBox Name="generoComboBox" HorizontalAlignment="Left" Margin="142,180,0,0" VerticalAlignment="Top" Width="120">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="269*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock HorizontalAlignment="Left" Margin="57,111,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" RenderTransformOrigin="-3.519,1.102" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="86.5,44,0,0" TextWrapping="Wrap" Text="Membro" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox Name="nomeTextBox" HorizontalAlignment="Left" Height="23" Margin="63.5,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="57,180,0,0" TextWrapping="Wrap" Text="Gênero" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <ComboBox Name="generoComboBox" HorizontalAlignment="Left" Margin="63.5,180,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">
             <ComboBox.Items>
                 <ComboBoxItem>
                     Masculino
@@ -25,7 +29,7 @@
                 </ComboBoxItem>
             </ComboBox.Items>
         </ComboBox>
-        <Button Name="AdicionarBtn" Content="Adicionar" HorizontalAlignment="Left" Margin="87,445,0,0" VerticalAlignment="Top" Width="175" Click="AdicionarBtn_Click"/>
+        <Button Name="AdicionarBtn" Content="Adicionar" HorizontalAlignment="Left" Margin="8.5,445,0,0" VerticalAlignment="Top" Width="175" Click="AdicionarBtn_Click" Grid.Column="1"/>
 
     </Grid>
 </Window>

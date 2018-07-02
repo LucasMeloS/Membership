@@ -12,10 +12,12 @@ namespace Membership
     using System;
     using System.Collections.Generic;
     
-    public partial class Membros
+    public partial class Membro
     {
         public int id { get; set; }
         public string nome { get; set; }
         public string genero { get; set; }
+        public string email { get; set; }
+        public Nullable<byte> idade { get; set; }
     }
 }
