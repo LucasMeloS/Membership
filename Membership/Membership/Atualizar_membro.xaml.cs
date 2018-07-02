@@ -30,8 +30,16 @@ namespace Membership
         private void AtualizarBtn_Click(object sender, RoutedEventArgs e)
         {
             Membro AtualizaMembro = (from m in db.Membros
-                                      where m.id == Id
-                                      select m).Single();
+                                     where m.id == Id
+                                     select m).Single();
+
+            AtualizaMembro.nome = nomeTextBox.Text;
+            AtualizaMembro.genero = generoComboBox.Text;
+            db.SaveChanges();
+            MainWindow.dataGrid.ItemsSource = db.Membros.ToList();
+
+
+
 
         }
     }
