@@ -95,9 +95,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EntityModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="DAL\Membro.cs">
-      <DependentUpon>EntityModel.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Model\Membro.cs" />
     <Compile Include="View\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
