@@ -6,9 +6,9 @@ o Membership é um aplicativo de gerenciamento de Membros de um Clube
 
 - Deleta
 
--Atualiza
+- Atualiza
 
--Lista
+- Lista
 
 Tem conexão com banco de dados Microsoft Sql.
 
