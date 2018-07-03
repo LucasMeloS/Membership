@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Membership
+namespace Membership.DAL
 {
     using System;
     using System.Collections.Generic;
