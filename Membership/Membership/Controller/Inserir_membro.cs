@@ -30,11 +30,11 @@ namespace Membership
         private void AdicionarBtn_Click(object sender, RoutedEventArgs e)
         {
 
-            
-                 membros.nome = nomeTextBox.Text;
-                 membros.genero = generoComboBox.Text;
-                 membros.email = emailTextBox.Text;
-                 membros.idade = Convert.ToByte(idadeTextBox.Text);
+
+            membros.nome = nomeTextBox.Text;
+            membros.genero = generoComboBox.Text;
+            membros.email = emailTextBox.Text;
+            membros.idade = Convert.ToByte(idadeTextBox.Text);
 
 
 
@@ -44,13 +44,13 @@ namespace Membership
             MainWindow.dataGrid.ItemsSource = db.Membros.ToList();
             this.Hide();
 
-              
+
 
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-       
+
         }
 
         private void nomeTextBox_TextChanged(object sender, TextChangedEventArgs e)

@@ -84,9 +84,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Atualizar_membro.xaml.cs">
-      <DependentUpon>Atualizar_membro.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Controller\Atualizar_membro.cs" />
+    <Compile Include="Controller\Inserir_membro.cs" />
+    <Compile Include="Controller\MainWindown.cs" />
     <Compile Include="EntityModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -101,13 +101,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EntityModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Inserir_membro.xaml.cs">
-      <DependentUpon>Inserir_membro.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +154,9 @@
       <DependentUpon>EntityModel.edmx</DependentUpon>
       <LastGenOutput>EntityModel.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

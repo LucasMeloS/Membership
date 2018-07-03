@@ -44,7 +44,7 @@ namespace Membership
         {
             int Id = (MeuDataGrid.SelectedItem as Membro).id;
             Atualizar_membro Amembro = new Atualizar_membro(Id);
-            Amembro.ShowDialog(); 
+            Amembro.ShowDialog();
         }
 
         private void ExcluirBtn_Click(object sender, RoutedEventArgs e)
